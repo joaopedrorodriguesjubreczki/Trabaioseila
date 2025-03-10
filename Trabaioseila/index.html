@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="mode-switch" class="mode-switch">
+        <button onclick="toggleMode()">Alternar Modo</button>
+    </div>
+
+    <div id="login-section" class="login-section">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Senha" required><br>
+        <button onclick="validateLogin()">Login</button>
+        <p id="login-message"></p>
+    </div>
+
+    <div id="user-info" class="user-info" style="display:none;">
+        <h2>Bem-vindo, <span id="user-name"></span></h2>
+        <p id="user-age-message"></p>
+        <h3>Calculadora:</h3>
+        <input type="number" id="value1" placeholder="Valor 1">
+        <input type="number" id="value2" placeholder="Valor 2">
+        <button onclick="calculate()">Somar</button>
+        <button onclick="calculate(false)">Subtrair</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

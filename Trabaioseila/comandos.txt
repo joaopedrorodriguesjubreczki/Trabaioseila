@@ -1,0 +1,7 @@
+npm install -g expo-cli
+
+expo init Trabaioseila
+
+cd Trabaioseila
+
+
